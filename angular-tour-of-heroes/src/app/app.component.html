@@ -1,6 +1,14 @@
-
 <h1>{{title}}</h1>
+<nav>
+    <a routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/heroes">Heroes</a>
+</nav>
 
-<app-heroes></app-heroes>
+
+<!-- The AppComponent template no longer needs 
+    <app-heroes> because the app will only display 
+    the HeroesComponent when the user navigates to it. i.e when we call the url = localhost:4200/heroes -->
+<router-outlet></router-outlet>
+
 
 <app-messages></app-messages>
